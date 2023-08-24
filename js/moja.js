@@ -36,7 +36,33 @@ function showSlides() {
 }
 
 
+// thematic
+const slider = document.querySelector('.slider-edu');
+const slides = document.querySelectorAll('.slide-edu');
 
+let currentSlide = 0;
+
+function goToSlide(slideIndex) {
+    if (slideIndex < 0 || slideIndex >= slides.length) return;
+    currentSlide = slideIndex;
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+
+function nextSlide() {
+    goToSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+    goToSlide(currentSlide - 1);
+}
+
+setInterval(nextSlide, 3000); // Auto slide every 3 seconds
+
+// Optional: Add event listeners for manual navigation
+// const nextButton = document.querySelector('.next-button');
+// const prevButton = document.querySelector('.prev-button');
+// nextButton.addEventListener('click', nextSlide);
+// prevButton.addEventListener('click', prevSlide);
 
 // let slideIndex = 1;
 // showSlides(slideIndex);
