@@ -36,6 +36,7 @@ header{
     background-size: cover;
     background-position: center;
     position: relative;
+    /* z-index: -1; */
 }
 
 nav {
@@ -141,7 +142,7 @@ nav .fa{
     .nav-links ul li{
         display: block;
     }
-    .nav-links{
+    #navLinks{
         position: absolute;
         background: #f7782a;
         height: 100vh;
@@ -149,8 +150,9 @@ nav .fa{
         top: 0;
         right: -200px;
         text-align: left;
-        z-index: 2;
+        /* z-index: 1; */
         transition: 1s;
+        bottom: 0;
     }
     .nav-links ul li:nth-child(1):after {
         content: '';

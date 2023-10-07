@@ -296,14 +296,14 @@ nav .fa {
 }
 
 .thematic-areas .area1{
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 .edu-photos{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, auto));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 10px;
 }
 
 .edu-photo1{
@@ -326,6 +326,23 @@ nav .fa {
 
     .thematic-box{
        padding-top: 3%;
+
     }
+    .edu-photo1 {
+        width: 300px;
+        height: 220px;
+        /* border-radius: 5px; */
+        object-fit: cover;
+    }
+
+    .edu-photo1 img {
+        width: 100%;
+        border-radius: 5px;
+        height: 100%;
+    }
+    .edu-photos{
+        padding-left: 6%;
+    }
+
 }
 
