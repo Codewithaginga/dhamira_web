@@ -30,13 +30,13 @@ header {
     width: 100%;
 }
 
-.header {
-    min-height: 100vh;
+header {
+    /* min-height: 100vh; */
     width: 100%;
-    background-image: linear-gradient(hsla(228, 76%, 7%, 0.7), hsla(228, 76%, 7%, 0.702)), url('/images/backshirt.jpg');
+    /* background-image: linear-gradient(hsla(228, 76%, 7%, 0.7), hsla(228, 76%, 7%, 0.702)), url('/images/backshirt.jpg');
     background-size: cover;
     background-position: center;
-    position: relative;
+    position: relative; */
 }
 
 nav {
@@ -66,7 +66,7 @@ nav img {
 }
 
 .nav-links ul li a {
-    color:#fff;
+    color:#ad3f33;
     text-decoration: none;
     font-size: 13px;
 }
@@ -221,21 +221,100 @@ nav .fa {
 
 /* thematic 
 */
+.thematic-areas{
+    padding: 5% 2%;
+}
+.thematic-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, auto));
+    gap: 15px;
+    margin-top: 20px;
+}
 
-.slider-edu{
+.thematic-box .areas:first-child {
     display: flex;
-    overflow: hidden;
-    width: 80%;
-    max-width: 800px;
-}
-.slider-edu img {
-    width: 500px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a6cb0;
 }
 
-.slide-edu {
-    flex-shrink: 0;
+.thematic-box .areas:nth-child(2) {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ad3f33;
+}
+
+.thematic-box .areas:nth-child(3) {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a6cb0;
+}
+
+.thematic-box .areas:nth-child(4) {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7782a;
+}
+
+.areas img {
+    width: 50px;
+}
+
+.areas {
+    padding: 20px;
+}
+
+.areas h5 {
+    color: #fff;
+}
+
+.thematic-goals {
+    padding: 20px;
+}
+
+.thematic-goals li {
+    list-style: disc;
+}
+
+.thematic-goals li::marker {
+    /* content: "-"; */
+    color: #f7782a;
+    font-size: 1.2em;
+    margin: 5px;
+
+}
+
+.thematic-goals ul {
+    padding-left: 20px;
+}
+
+.thematic-areas .area1{
+    padding: 20px;
+    text-align: center;
+}
+
+.edu-photos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, auto));
+    gap: 15px;
+}
+
+.edu-photo1{
+    width: 250px;
+    height: 200px;
+    /* border-radius: 5px; */
+    object-fit: cover;
+}
+.edu-photo1 img{
     width: 100%;
-    transition: transform 0.5s ease-in-out;
+    border-radius: 5px;
+    height: 100%;
 }
-
 

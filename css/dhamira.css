@@ -265,6 +265,9 @@ nav .fa{
     body{
         overflow-x: hidden;
     }
+    .backgound{
+        flex-direction: column;
+    }
 }
 
 
@@ -313,6 +316,41 @@ nav .fa{
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
+}
+.backgound {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.backgound .project-col {
+    flex-basis: 32%;
+    background-color: rgb(246, 246, 246);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.backgound .blue{
+    color: #0a6cb0;
+}
+.backgound .maroon {
+    color: #ad3f33;
+}
+.backgound .yellow {
+    color:#f7782a;
+}
+.backgound h1{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.backgound p{
+   text-align: center;
+   padding: 12px 0;
 }
 
 @keyframes fade {
