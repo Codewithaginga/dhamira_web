@@ -318,3 +318,14 @@ nav .fa {
     height: 100%;
 }
 
+
+
+/* edu-photos */
+
+@media(max-width: 700px) {
+
+    .thematic-box{
+       padding-top: 3%;
+    }
+}
+
