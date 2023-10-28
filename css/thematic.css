@@ -317,8 +317,9 @@ nav .fa {
     border-radius: 5px;
     height: 100%;
 }
-.edu-photo1.para-edu{
+.edu-photo1 p{
     text-align: center;
+    padding-top: 20px;
 }
 
 
@@ -348,4 +349,8 @@ nav .fa {
     }
 
 }
+
+
+
+
 

@@ -583,3 +583,26 @@ footer .item2, .item3, .item1 p{
     }
 }
 
+.our_partners{
+    padding: 0 5%;
+  
+}
+.partners{
+    display: grid;
+    grid-template-columns: 100px 200px;
+    align-items: center;
+    gap: 20px;
+}
+
+.our_partners h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+.our_partners .partners div{
+    width: 100px;
+}
+.our_partners .partners div img {
+    width: 100%;
+
+}
+
