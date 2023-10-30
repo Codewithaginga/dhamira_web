@@ -589,11 +589,11 @@ footer .item2, .item3, .item1 p{
 }
 .partners{
     display: grid;
-    grid-template-columns: 100px 200px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    justify-items: center;
+    margin-top: 20px;
     align-items: center;
-    gap: 20px;
 }
-
 .our_partners h1 {
     text-align: center;
     padding-top: 30px;
